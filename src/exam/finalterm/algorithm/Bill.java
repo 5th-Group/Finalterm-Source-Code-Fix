@@ -21,11 +21,11 @@ public class Bill {
 					break;
 			case 4:
 					currentBill = (L1 * 1500) + (L2 * 1800) + (L3 * 2000);
-					currentBill += (consumedPower - L3) * 2500;
+					currentBill += (consumedPower - (2 * L3)) * 2500;
 					break;
 			case 5:
 					currentBill = (L1 * 1500) + (L2 * 1800) + L3 * (4500);
-					currentBill += (consumedPower - L3) * 3500;
+					currentBill += (consumedPower - (3 * L3)) * 3500;
 					break;
 			}
 		return currentBill;
